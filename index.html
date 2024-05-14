@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="screen1">
+            <h1>Informe os Nomes dos Jogadores</h1>
+            <form id="name-form">
+                <label for="player1">Nome do jogador 1:</label>
+                <input type="text" id="player1" required>
+                <label for="player2">Nome do jogador 2:</label>
+                <input type="text" id="player2" required>
+                <button type="button" id="next1">Próximo</button>
+            </form>
+        </div>
+
+        <div id="screen2" style="display: none;">
+            <h1 id="player1Label"></h1>
+            <h2>Escolha pedra, papel ou tesoura</h2>
+            <form id="choice-form-1">
+                <label for="choice1">Escolha do jogador 1:</label>
+                <select id="choice1" required>
+                    <option value="">Selecione...</option>
+                    <option value="Pedra">Pedra</option>
+                    <option value="Papel">Papel</option>
+                    <option value="Tesoura">Tesoura</option>
+                </select>
+                <button type="button" id="next2">Próximo</button>
+            </form>
+        </div>
+
+        <div id="screen3" style="display: none;">
+            <h1 id="player2Label"></h1>
+            <h2>Escolha pedra, papel ou tesoura</h2>
+            <form id="choice-form-2">
+                <label for="choice2">Escolha do jogador 2:</label>
+                <select id="choice2" required>
+                    <option value="">Selecione...</option>
+                    <option value="Pedra">Pedra</option>
+                    <option value="Papel">Papel</option>
+                    <option value="Tesoura">Tesoura</option>
+                </select>
+                <button type="button" id="next3">Próximo</button>
+            </form>
+        </div>
+
+        <div id="screen4" style="display: none;">
+            <h1>Resultado</h1>
+            <p id="result"></p>
+            <button type="button" id="restart">Voltar ao Inicio</button>
+            <button type="button" id="back-to-1">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
